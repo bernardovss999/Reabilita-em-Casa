@@ -1,0 +1,156 @@
+<section class="page-hero">
+  <div class="wrap page-hero-grid">
+    <div>
+      <p class="eyebrow rv">Locação de equipamentos</p>
+      <h1 class="display rv" style="--d:.05s">O apoio certo <em>para a sua rotina.</em></h1>
+      <svg class="wave-line rv" style="--d:.08s" viewBox="0 0 300 60" aria-hidden="true"><path d="M3 44C40 10 76 10 110 34s70 28 105 2 62-26 82-24"/></svg>
+      <p class="lead rv" style="--d:.1s">Cadeiras de rodas, andadores, muletas, cadeiras de banho e camas hospitalares. Uma fisioterapeuta orienta a escolha do modelo e das medidas antes da entrega.</p>
+      <div class="btn-row rv" style="--d:.15s">
+        <a class="btn btn-sun" href="#catalogo">Ver catálogo {{i:arrow}}</a>
+        <a class="btn btn-ghost" href="{{WA_ESCOLHA}}" target="_blank" rel="noopener">{{i:wa}}Ajuda para escolher</a>
+      </div>
+    </div>
+    <div class="page-hero-media rv" style="--d:.1s">
+      <div class="panel"><span class="arch-mark"></span><span class="sq-tag">Locação de equipamentos</span><img src="assets/img/cat-cadeira.webp" alt="Ilustração de cadeira de rodas" width="640" height="637" fetchpriority="high"></div>
+      <span class="float-sq a sq-graphite pop" style="--i:2"></span><span class="float-sq b sq-terra pop" style="--i:4"></span>
+    </div>
+  </div>
+</section>
+
+<section class="sec-tight bg-ivory">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div>
+        <p class="eyebrow rv">Por onde começar</p>
+        <h2 class="h2 rv">Cada apoio tem <em>um lugar.</em></h2>
+      </div>
+      <p class="lead rv">Eles não se excluem: muita gente usa andador em casa e cadeira de rodas na rua. O foco é sempre segurança e conforto.</p>
+    </div>
+    <div class="choose">
+      <div class="choose-item rv"><span class="where">Dentro de casa</span><h3>Andador fixo ou articulado</h3><p>Para piso plano, trajetos curtos e quem precisa de base firme a cada passo.</p></div>
+      <div class="choose-item rv" style="--d:.05s"><span class="where">Rua e distâncias maiores</span><h3>Andador com rodas e assento</h3><p>Freios bilaterais e um lugar para descansar quando o cansaço chega.</p></div>
+      <div class="choose-item rv" style="--d:.1s"><span class="where">Escadas e apoio leve</span><h3>Bengala</h3><p>Aumenta a base de apoio. Se todo o peso vai para ela, talvez já não seja suficiente.</p></div>
+      <div class="choose-item rv" style="--d:.15s"><span class="where">Passeios e consultas</span><h3>Cadeira de rodas</h3><p>Funciona como um carro: leva de um ponto ao outro. Quem anda também pode usar.</p></div>
+    </div>
+    <p class="note mt-l rv">A indicação definitiva vem da conversa com a fisioterapeuta, que considera força, equilíbrio, dor e a estrutura da sua casa.</p>
+  </div>
+</section>
+
+<section class="sec" id="catalogo">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div>
+        <p class="eyebrow rv">Catálogo</p>
+        <h2 class="h2 rv">Equipamentos <em>disponíveis.</em></h2>
+      </div>
+      <p class="lead rv desk">Toque em um item para ver todas as especificações. Valores e disponibilidade são confirmados pelo WhatsApp.</p>
+    </div>
+    <div class="filters" id="catalogo-filtros" role="toolbar" aria-label="Filtrar por categoria"></div>
+    <div class="grid-products" id="catalogo-grid">
+      <noscript><p>Para ver o catálogo, ative o JavaScript ou <a href="{{WA_LOCACAO}}">fale conosco pelo WhatsApp</a>.</p></noscript>
+    </div>
+  </div>
+</section>
+
+<dialog class="sheet" id="produto" aria-labelledby="produto-nome">
+  <div class="sheet-in">
+    <div class="sheet-media">
+      <img data-p-img alt="" width="340" height="230">
+      <button class="sheet-close" type="button" data-close aria-label="Fechar">{{i:close}}</button>
+    </div>
+    <div class="sheet-body">
+      <span class="p-brand" data-p-brand></span>
+      <h2 id="produto-nome" data-p-name></h2>
+      <p class="muted" data-p-sum></p>
+      <ul class="ticks" data-p-specs></ul>
+      <a class="btn btn-sun" data-p-wa href="{{WA_LOCACAO}}" target="_blank" rel="noopener" style="width:100%">{{i:wa}}Consultar disponibilidade</a>
+      <p class="sheet-note">Especificações do fabricante. A fisioterapeuta confirma se o modelo é adequado antes da entrega.</p>
+    </div>
+  </div>
+</dialog>
+
+<section class="sec bg-ink">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div>
+        <p class="eyebrow rv">Nossas vantagens</p>
+        <h2 class="h2 rv">Muito além <em>da entrega.</em></h2>
+      </div>
+      <p class="lead rv desk">Cada detalhe foi pensado para que a família resolva rápido e quem vai usar se sinta seguro desde o primeiro dia.</p>
+    </div>
+    <div class="cards c3">
+      <div class="card rv"><span class="ico">{{i:user}}</span><h3>Fisioterapeuta no atendimento</h3><p>Você conversa com uma especialista, que orienta a melhor escolha.</p></div>
+      <div class="card rv" style="--d:.05s"><span class="ico">{{i:bolt}}</span><h3>Entrega no mesmo dia</h3><p>Agilidade para quando a necessidade não pode esperar.</p></div>
+      <div class="card rv" style="--d:.1s"><span class="ico">{{i:truck}}</span><h3>Transporte próprio</h3><p>Equipe da casa, com cuidado na entrega e na retirada.</p></div>
+      <div class="card rv"><span class="ico">{{i:hand}}</span><h3>Demonstração de uso</h3><p>Quem entrega mostra como montar, ajustar e usar o equipamento.</p></div>
+      <div class="card rv" style="--d:.05s"><span class="ico">{{i:shield}}</span><h3>Higienização profissional</h3><p>Parceria com a Jani-King, empresa americana pioneira em desinfecção de equipamentos.</p></div>
+      <div class="card rv" style="--d:.1s"><span class="ico">{{i:card}}</span><h3>Pagamento facilitado</h3><p>Dinheiro, cartão de débito, transferência bancária ou Pix.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split rev">
+    <div class="split-media rv">
+      <span class="deco a sq-orange pop" style="--i:1"></span>
+      <div class="frame"><img src="assets/img/autonomia-3.webp" alt="Senhora com andador passando pela porta do apartamento" width="900" height="1193" loading="lazy"></div>
+    </div>
+    <div class="split-body">
+      <p class="eyebrow rv">Comprar ou alugar?</p>
+      <h2 class="h2 rv">Se a necessidade é <em>temporária,</em> alugar faz mais sentido.</h2>
+      <p class="rv muted">Tem cadeira de rodas que a família compra pensando em muito tempo de uso e, poucas semanas depois, já não é necessária. Na recuperação de uma cirurgia ou fratura, a pessoa usa enquanto precisa e devolve quando volta a andar.</p>
+      <ul class="ticks rv">
+        <li>Manutenção e consertos ficam por conta da locadora.</li>
+        <li>Se o modelo não se adaptar, é possível trocar.</li>
+        <li>Quando não precisar mais, basta devolver. Nada ocupando espaço em casa.</li>
+        <li>Tempo para avaliar com calma se vale mesmo a pena comprar.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec bg-ivory">
+  <div class="wrap side">
+      <div class="side-head">
+        <p class="eyebrow rv">Antes de pedir</p>
+        <h2 class="h2 rv">Três medidas que <em>evitam erro.</em></h2>
+        <p class="muted rv">Antes de chamar no WhatsApp, vale olhar três detalhes da casa e da rotina de quem vai usar.</p>
+      </div>
+      <div class="side-body">
+      <ol class="steps">
+        <li class="rv"><h3>Meça a largura das portas</h3><p>De nada adianta um andador ou uma cadeira que não passa pelo banheiro ou pelo quarto. Compare com a largura total do equipamento.</p></li>
+        <li class="rv"><h3>Pense em onde vai usar</h3><p>Em casa, qualquer pneu serve. Para a rua, prefira pneus infláveis ou antifuro.</p></li>
+        <li class="rv"><h3>Vai no carro?</h3><p>Escolha um modelo com rodas e apoios de pé desmontáveis, que cabe no porta-malas.</p></li>
+      </ol>
+      </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap side">
+      <div class="side-head">
+        <p class="eyebrow rv">Dúvidas frequentes</p>
+        <h2 class="h2 rv">Sobre a <em>locação.</em></h2>
+        <p class="muted rv">Não encontrou a sua dúvida? A equipe responde pelo WhatsApp.</p>
+        <a class="link-arrow rv" href="{{WA_LOCACAO}}" target="_blank" rel="noopener">Perguntar pelo WhatsApp {{i:arrow}}</a>
+      </div>
+      <div class="side-body">
+      <div class="faq rv">
+        <details><summary>Como faço para alugar?{{i:plus}}</summary><div>Chame pelo WhatsApp (21) 99744-3300. Você conversa com uma fisioterapeuta, recebe a indicação do modelo e combina a entrega, que pode acontecer no mesmo dia.</div></details>
+        <details><summary>Alguém me ensina a usar o equipamento?{{i:plus}}</summary><div>Sim. Na entrega, a equipe demonstra como montar, ajustar e usar. Andador e bengala precisam estar na altura certa: a manopla deve ficar na dobra do punho, com o cotovelo levemente flexionado.</div></details>
+        <details><summary>E se o modelo não se adaptar?{{i:plus}}</summary><div>Uma das vantagens do aluguel é poder trocar o equipamento caso a pessoa não se adapte àquele modelo.</div></details>
+        <details><summary>Os equipamentos são higienizados?{{i:plus}}</summary><div>Sim. A Reabilita em Casa tem parceria com a Jani-King, empresa americana pioneira em desinfecção e higienização de equipamentos.</div></details>
+        <details><summary>Quais são as formas de pagamento?{{i:plus}}</summary><div>Dinheiro, cartão de débito, transferência bancária ou Pix.</div></details>
+        <details><summary>Vocês também vendem?{{i:plus}}</summary><div>O colchão pneumático e a mini bike estão disponíveis para venda. Para os demais itens, consulte pelo WhatsApp.</div></details>
+      </div>
+      </div>
+  </div>
+</section>
+
+<section class="sec bg-ink cta-final">
+  <div class="wrap">
+    <h2 class="h2 rv">Não sabe qual escolher? <em>É para isso que estamos aqui.</em></h2>
+    <p class="lead rv">Conte quem vai usar, onde e por quanto tempo. A fisioterapeuta indica o modelo certo.</p>
+    <div class="btn-row rv"><a class="btn btn-sun" href="{{WA_ESCOLHA}}" target="_blank" rel="noopener">{{i:wa}}Pedir indicação</a></div>
+  </div>
+</section>

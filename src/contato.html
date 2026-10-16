@@ -1,0 +1,57 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow rv">Contato</p>
+    <h1 class="display rv" style="--d:.05s">Vamos <em>conversar?</em></h1>
+    <svg class="wave-line rv" style="--d:.08s" viewBox="0 0 300 60" aria-hidden="true"><path d="M3 44C40 10 76 10 110 34s70 28 105 2 62-26 82-24"/></svg>
+    <p class="lead rv" style="--d:.1s">O caminho mais rápido é o WhatsApp. Do outro lado, uma fisioterapeuta pronta para entender a sua necessidade e indicar o próximo passo.</p>
+  </div>
+</section>
+
+<section class="sec-tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact-grid">
+      <a class="c-card rv" href="{{WA_LOCACAO}}" target="_blank" rel="noopener"><span class="ico">{{i:box}}</span><span><small>WhatsApp</small><b>Locação de equipamentos</b></span><svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="c-card rv" style="--d:.05s" href="{{WA_FISIO}}" target="_blank" rel="noopener"><span class="ico">{{i:home}}</span><span><small>WhatsApp</small><b>Fisioterapia domiciliar</b></span><svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="c-card rv" href="{{TEL}}"><span class="ico">{{i:phone}}</span><span><small>Telefone</small><b>(21) 99744-3300</b></span><svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="c-card rv" style="--d:.05s" href="{{IG}}" target="_blank" rel="noopener"><span class="ico">{{i:ig}}</span><span><small>Instagram</small><b>@reabilitaemcasa</b></span><svg class="go" aria-hidden="true"><use href="#i-out"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split top">
+    <div class="split-body" style="order:0">
+      <p class="eyebrow rv">Mensagem rápida</p>
+      <h2 class="h2 rv">Escreva aqui, <em>enviamos pelo WhatsApp.</em></h2>
+      <p class="muted rv">Preencha e toque em enviar: a mensagem abre pronta no seu WhatsApp. Nenhum dado fica armazenado no site.</p>
+      <form class="form rv" id="form-contato" novalidate>
+        <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?"></div>
+        <fieldset class="field seg">
+          <legend>Assunto</legend>
+          <label><input type="radio" name="assunto" value="Locação de equipamento" checked><span>Locação</span></label>
+          <label><input type="radio" name="assunto" value="Fisioterapia domiciliar"><span>Fisioterapia</span></label>
+          <label><input type="radio" name="assunto" value="Guia prático do andador"><span>E-book</span></label>
+          <label><input type="radio" name="assunto" value="Outro assunto"><span>Outro</span></label>
+        </fieldset>
+        <div class="field"><label for="f-msg">Mensagem</label><textarea id="f-msg" name="mensagem" placeholder="Conte um pouco sobre quem vai usar ou ser atendido"></textarea></div>
+        <button class="btn btn-sun" type="submit" style="justify-self:start">{{i:wa}}Enviar pelo WhatsApp</button>
+      </form>
+    </div>
+    <div class="stack rv">
+      <div class="map"><iframe title="Mapa: Reabilita em Casa no Recreio dos Bandeirantes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Ant%C3%B4nio+Batista+Bitencourt,+45,+Recreio+dos+Bandeirantes,+Rio+de+Janeiro&output=embed"></iframe></div>
+      <div class="card">
+        <h3>Endereço</h3>
+        <p>Rua Antônio Batista Bitencourt, 45, sala 203<br>Recreio dos Bandeirantes, Rio de Janeiro, RJ · 22790-250</p>
+        <p style="margin-top:14px"><a class="link-arrow" href="{{MAPS}}" target="_blank" rel="noopener">Como chegar {{i:out}}</a></p>
+      </div>
+      <div class="card">
+        <h3>Horário de atendimento</h3>
+        <ul class="hours">
+          <li><span>Terça a sexta</span><span>9h às 18h</span></li>
+          <li><span>Sábado</span><span>9h às 13h</span></li>
+          <li><span>Domingo</span><span>Fechado</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
