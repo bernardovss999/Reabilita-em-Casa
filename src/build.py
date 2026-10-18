@@ -164,9 +164,9 @@ def head(page, meta):
 <title>{meta['title']}</title>
 <meta name="description" content="{meta['desc']}">
 <link rel="canonical" href="{canonical}">{robots}
-<meta name="theme-color" content="#FFF9EF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
-<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF9EF">
+<meta name="color-scheme" content="only light">
+<meta name="supported-color-schemes" content="light only">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Reabilita em Casa">
@@ -181,7 +181,7 @@ def head(page, meta):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=block">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=block" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=1792126774">
+<link rel="stylesheet" href="assets/css/site.css?v=1792126775">
 <script>try{{if(sessionStorage.getItem("rc-pt")){{document.documentElement.classList.add("pt-enter");sessionStorage.removeItem("rc-pt")}}}}catch(e){{}}</script>
 {extra}
 </head>"""
@@ -196,7 +196,7 @@ def header(page):
     return f"""<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="header">
   <div class="wrap header-in">
-    <a class="brand" href="index.html" aria-label="Reabilita em Casa, página inicial"><picture><source srcset="assets/img/logo-branco.png" media="(prefers-color-scheme: dark)"><img src="assets/img/logo.png" alt="Reabilita em Casa" width="720" height="242"></picture></a>
+    <a class="brand" href="index.html" aria-label="Reabilita em Casa, página inicial"><img src="assets/img/logo.png" alt="Reabilita em Casa" width="720" height="242"></a>
     <nav class="nav" aria-label="Principal"><span class="nav-ind" aria-hidden="true"></span><ul>{items}</ul></nav>
     <a class="btn btn-sm header-cta" href="{LINKS['WA_GERAL']}" target="_blank" rel="noopener">{icon('wa')}Fale com a Andréa</a>
     <button class="burger" type="button" data-menu aria-controls="drawer" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
@@ -271,9 +271,9 @@ def render(page, meta, body):
     import re
     body = re.sub(r"\{\{i:([a-z]+)\}\}", lambda m: icon(m.group(1)), body)
     body = re.sub(r"<img(?![^>]*\bdecoding=)", '<img decoding="async"', body)
-    scripts = '<script src="assets/js/site.js?v=1792126774" defer></script>'
+    scripts = '<script src="assets/js/site.js?v=1792126775" defer></script>'
     if page in ("equipamentos.html", "index.html"):
-        scripts = '<script src="assets/js/produtos.js?v=1792126774" defer></script>\n' + scripts
+        scripts = '<script src="assets/js/produtos.js?v=1792126775" defer></script>\n' + scripts
     if meta.get("bare"):
         return f"""{head(page, meta)}
 <body class="links-page">

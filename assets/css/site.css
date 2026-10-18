@@ -973,50 +973,7 @@ html { scrollbar-gutter: stable; }
 .reel:hover .reel-play { transform: translate(-50%, -50%) scale(1.08) rotate(-5deg); }
 
 /* ==========================================================
-   MODO ESCURO: acompanha o tema do aparelho
-   Fundo grafite quente, textos marfim, laranja como acento.
+   SEMPRE TEMA CLARO: o site tem uma única aparência.
+   Celulares em modo noturno não podem escurecer nem inverter as cores.
    ========================================================== */
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --cream: #161513;
-    --ivory: #1E1C1A;
-    --white: #272522;
-    --graphite: #F4EEE4;
-    --ink-2: #BDB5A8;
-    --ink-3: #9A9388;
-    --apricot: #45321A;
-    --terra: #FFB054;
-    --line: rgba(244, 238, 228, .12);
-    --line-strong: rgba(244, 238, 228, .24);
-    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 18px 38px -16px rgba(0,0,0,.7);
-  }
-  /* Blocos grafite (seções escuras, e-book, rodapé, link em destaque) mantêm a paleta original */
-  .bg-ink, .footer, .ebook, .l-item.featured {
-    --cream: #FFF9EF; --ivory: #F7F3EB; --white: #FFFFFF; --graphite: #2E2E2E;
-    --ink-2: #5C5A55; --ink-3: #736F67; --apricot: #FFE2B0; --terra: #A64B00;
-    --line: rgba(46, 46, 46, .11); --line-strong: rgba(46, 46, 46, .22);
-  }
-  .bg-ink, .footer { background: #23211F; }
-  .ebook, .l-item.featured { background: #2B2926; }
-  .bg-ink + .footer { box-shadow: inset 0 1px 0 rgba(255,249,239,.08); }
-
-  .header.is-scrolled { background: rgba(22, 21, 19, .88); }
-  .nav-ind { background: rgba(255, 165, 0, .16) !important; }
-  .nav a[aria-current="page"] { background: rgba(255, 165, 0, .16); }
-  .btn:hover, .wa-float, .rail-btn { box-shadow: 0 14px 30px -12px rgba(0,0,0,.7); }
-  .rail-btn { box-shadow: 0 8px 22px -8px rgba(0,0,0,.7), inset 0 0 0 1px var(--line-strong); }
-
-  /* Fotos de produto têm fundo branco: ficam num quadro claro */
-  .p-media, .sheet-media { background: #F5F1EA; }
-  .p-body { border-top-color: transparent; }
-
-  .panel .arch-mark { border-color: #FFE2B0; }
-  .ticks li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFB054' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E"); }
-  .sq-strip i:nth-child(2) { background: #FFE2B0; }
-  .sq-strip i:nth-child(4) { background: #A64B00; }
-  .sq-strip i:nth-child(5) { background: var(--paper); box-shadow: none; }
-  .map iframe { filter: grayscale(.85) invert(.9) hue-rotate(180deg) contrast(.9); }
-  dialog.sheet::backdrop { background: rgba(0, 0, 0, .62); }
-  .field input:focus, .field textarea:focus { box-shadow: 0 0 0 4px rgba(255, 165, 0, .22); }
-}
+:root { color-scheme: only light; }
