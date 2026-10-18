@@ -38,6 +38,9 @@ Segue o manual "Proposta de Identidade Visual" e o "Projeto revisado":
 - Menu: indicador que desliza entre os itens no desktop; no celular, painel que se abre a partir do botão, com itens em cascata.
 - Cabeçalho some ao descer a página e volta ao subir, com barra de progresso de leitura.
 
+## Modo escuro
+O site acompanha o tema do celular ou computador (claro ou escuro). As cores do modo escuro ficam no fim de `assets/css/site.css`, no bloco `prefers-color-scheme: dark`. As seções grafite, o e-book e o rodapé mantêm a paleta original nos dois temas. O logo do cabeçalho troca para `logo-branco.png` no escuro.
+
 ## A confirmar com a empresa antes de publicar
 1. **Horário de segunda-feira.** O Google mostrou segunda fechada por causa do feriado de 12/10. O site exibe terça a sexta, 9h às 18h, e sábado, 9h às 13h.
 2. **Página do e-book.** O botão leva a `reclocacao.com.br/guia-pratico-do-andador/`. Essa página precisa continuar no ar, ou o link precisa ser atualizado.
