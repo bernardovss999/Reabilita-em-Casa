@@ -181,7 +181,7 @@ def head(page, meta):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=block">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=block" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=1792126775">
+<link rel="stylesheet" href="assets/css/site.css?v=1792126776">
 <script>try{{if(sessionStorage.getItem("rc-pt")){{document.documentElement.classList.add("pt-enter");sessionStorage.removeItem("rc-pt")}}}}catch(e){{}}</script>
 {extra}
 </head>"""
@@ -263,7 +263,7 @@ def footer():
 </footer>
 <a class="wa-float is-hidden" href="{LINKS['WA_GERAL']}" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">{icon('wa')}</a>"""
 
-CURTAIN = '<div class="pt" aria-hidden="true"><i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i><img src="assets/img/pomba.png" alt="" width="145" height="133"></div>'
+CURTAIN = '<div class="pt" aria-hidden="true"><i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i><img src="assets/img/pomba.png?v=2" alt="" width="145" height="133"></div>'
 
 def render(page, meta, body):
     for k, v in LINKS.items():
@@ -271,9 +271,9 @@ def render(page, meta, body):
     import re
     body = re.sub(r"\{\{i:([a-z]+)\}\}", lambda m: icon(m.group(1)), body)
     body = re.sub(r"<img(?![^>]*\bdecoding=)", '<img decoding="async"', body)
-    scripts = '<script src="assets/js/site.js?v=1792126775" defer></script>'
+    scripts = '<script src="assets/js/site.js?v=1792126776" defer></script>'
     if page in ("equipamentos.html", "index.html"):
-        scripts = '<script src="assets/js/produtos.js?v=1792126775" defer></script>\n' + scripts
+        scripts = '<script src="assets/js/produtos.js?v=1792126776" defer></script>\n' + scripts
     if meta.get("bare"):
         return f"""{head(page, meta)}
 <body class="links-page">
